@@ -15,5 +15,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Log.e("TAG", "TAG");
+
+        Duck mallard = new MallardDuck();
+        mallard.perfermQuack();
+        mallard.preformFly();
+
+        Duck modelDuck = new ModelDuck();
+        modelDuck.perfermQuack();
+        modelDuck.setFlyBehaviour(new FlyRocketPowered());
+        modelDuck.preformFly();
     }
 }
